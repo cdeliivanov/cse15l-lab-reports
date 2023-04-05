@@ -9,5 +9,5 @@ First find your course specific account here: [https://sdacs.ucsd.edu/~icc/index
 
 Look up your account using your general UCSD username and PID. When you log in, you should be welcomed with your name. Under "Additional Accounts" you should see a button that starts with `cse15l`. Click that button. 
 
-![Image](Screen Shot 2023-04-05 at 4.31.41 PM.png)
+![Image](Screen Shot 2023-04-05 at 4.37.03 PM.png)
 
