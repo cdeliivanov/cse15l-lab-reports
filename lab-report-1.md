@@ -25,3 +25,14 @@ I already had VS Code installed on my computer. If one does not have VS Code alr
 When launching VS Code, you should be welcomed with a home page similar to this. 
 
 ![Image](Screen Shot 2023-04-06 at 4.19.03 PM.png)
+
+## Part 3 - Remotely Connecting
+Now we are going to remotely connect using the course specific account we were mentioning earlier in Part 1. We will use VS Code to connect to a remote computer using the internet. 
+
+We are going to use `ssh`. First, open a terminal in VS Code. Do this by finding the Terminal menu at the top of the screen and selecting New Terminal or using the Control + Shift + ` shortcut. 
+
+![Image](Screen Shot 2023-04-06 at 4.33.30 PM.png)
+
+Now we are going to insert this command into the terminal, with the x spaces replaced with the letters found in the username you took note of earlier. 
+
+`ssh cs15lsp23__xx__@ieng6.ucsd.edu`
