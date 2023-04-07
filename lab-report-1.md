@@ -39,7 +39,7 @@ Now we are going to insert this command into the terminal, with the x spaces rep
 
 From there, you may be prompted asking if you would like to connect. Type yes and press enter. Then type in your password (it won't show) and press enter. 
 
-![Image}(Screen Shot 2023-04-06 at 4.44.29 PM.png)
+![Image](Screen Shot 2023-04-06 at 4.44.29 PM.png)
 
 Once you have entered your password, you should be connected to the remote computer. Your terminal should look like this. 
 
