@@ -35,4 +35,21 @@ We are going to use `ssh`. First, open a terminal in VS Code. Do this by finding
 
 Now we are going to insert this command into the terminal, with the x spaces replaced with the letters found in the username you took note of earlier. 
 
-`ssh cs15lsp23__xx__@ieng6.ucsd.edu`
+`ssh cs15lsp23xx@ieng6.ucsd.edu`
+
+From there, you may be prompted asking if you would like to connect. Type yes and press enter. Then type in your password (it won't show) and press enter. 
+
+![Image}(Screen Shot 2023-04-06 at 4.44.29 PM.png)
+
+Once you have entered your password, you should be connected to the remote computer. Your terminal should look like this. 
+
+![Image](Screen Shot 2023-04-06 at 4.49.05 PM.png)
+
+## Part 4 - Trying Some Commands
+Now that we've connected to the remote computer, we can try running some commands. Here you can see commands such as `cd ~`, `cd`, `ls`, `ls -lat`, and `ls -a`. You can also see that when we tried `ls /home/linux/ieng6/cs15lsp23/cs15lsp23az`, where az was another teammate's username, we recieved a permession denied message. `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/` and `cat /home/linux/ieng6/cs15lsp23/public/hello.txt` also recieved errors.  
+
+![Image](Screen Shot 2023-04-06 at 4.55.47 PM.png)
+
+You can also try other commands such as `pwd`, `mkdir`, and `cp`.
+
+When you are done using the remote computer, log out by using Ctrl + D or using the command `exit` in the terminal.
