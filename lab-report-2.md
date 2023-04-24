@@ -6,7 +6,7 @@ In this report, we will go through the StringServer web server and bugs in the l
 
 Here is the code for StringServer.
 
-![Image](Screen Shot 2023-04-24 at 3.08.07 PM.png)
+![Image](Screen Shot 2023-04-24 at 3.26.57 PM.png)
 
 Here we see the result of using /add-message.
 
@@ -14,6 +14,6 @@ Here we see the result of using /add-message.
 
 ![Image](Screen Shot 2023-04-24 at 3.15.48 PM.png)
 
-The method in my code that is ultimately called to create this result is the handleRequest method. Both screenshots use the handleRequest method. This method uses the url as an argument. First the url is checked to see if /add-message is contained. Then if it is, the url is split by the '=' to seperate what will be added to the display. 
+The method in my code that is ultimately called to create this result is the handleRequest method. Both screenshots use the handleRequest method. This method uses the url as an argument. First the url is checked to see if /add-message is contained. Then if it is, the url is split by the '=' to seperate what will be added to the display. The display variable is used to store what is added to the display while a new /add-message is used. 
 
-
+The display variable is changed everytime add-message is used. This 
