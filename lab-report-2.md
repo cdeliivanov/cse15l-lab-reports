@@ -5,6 +5,6 @@ In this report, we will go through the StringServer web server and bugs in the l
 ## Part 1 - StringServer
 
 Here is the code for StringServer.
-[Image](Screen Shot 2023-04-24 at 3.08.07 PM.png)
+![Image](Screen Shot 2023-04-24 at 3.08.07 PM.png)
 
 
