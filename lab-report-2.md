@@ -10,11 +10,9 @@ Here is the code for StringServer.
 
 Here we see the result of using /add-message.
 
-![Image](Screen Shot 2023-04-24 at 3.15.34 PM.png) width = "500" 
-
 <img src="Screen Shot 2023-04-24 at 3.15.34 PM.png"  width="500" height="272">
 
-![Image](Screen Shot 2023-04-24 at 3.15.48 PM.png)
+<img src="Screen Shot 2023-04-24 at 3.15.48 PM.png"  width="500" height="235">
 
 The method in my code that is ultimately called to create this result is the handleRequest method. Both screenshots use the handleRequest method. This method uses the url as an argument. First the url is checked to see if /add-message is contained. Then if it is, the url is split by the '=' to seperate what will be added to the display. The display variable is used to store what is added to the display while a new /add-message is used. 
 
