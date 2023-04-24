@@ -10,7 +10,9 @@ Here is the code for StringServer.
 
 Here we see the result of using /add-message.
 
-![Image](Screen Shot 2023-04-24 at 3.15.34 PM.png)
+![Image](Screen Shot 2023-04-24 at 3.15.34 PM.png) width = "500" 
+
+<img src="Screen Shot 2023-04-24 at 3.15.34 PM.png"  width="500" height="250">
 
 ![Image](Screen Shot 2023-04-24 at 3.15.48 PM.png)
 
