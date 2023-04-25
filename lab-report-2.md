@@ -42,5 +42,36 @@ Failure-inducing input
   }
 ```
 
+This test reverses the order of an array by creating a new array with the reverse order. The failure inducing input had two elements to flip, 4 being the expected first input, but instead the code returned 0. 
+
+Input that doesn't fail
+```
+@Test
+  public void testReversed1() {
+    int[] input1 = {0};
+    assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
+  }
+```
+This test does not fail because there is only one number 0.
+
+Fixed Code
+```
+// Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
+
+
+
+
+
+
+
 
 
