@@ -20,7 +20,33 @@ The 'display' variable is changed everytime add-message is used. This variable i
 
 ## Part 2 - Bug in Lab 3
 
-Original Code
+**Failure-inducing input**
+```
+@Test
+  public void testRMultipleInputs() {
+    int[] input1 = {3, 4};
+    assertArrayEquals(new int[]{4, 3}, ArrayExamples.reversed(input1));
+  }
+```
+
+This test reverses the order of an array by creating a new array with the reverse order. The failure inducing input had two elements to flip, 4 being the expected first input, but instead the code returned 0. 
+
+**Input that doesn't fail**
+```
+@Test
+  public void testReversed1() {
+    int[] input1 = {0};
+    assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
+  }
+```
+
+This test does not fail because there is only one number 0.
+
+<img src="Screen Shot 2023-04-24 at 6.15.01 PM.png"  width="1000" height="153">
+
+<img src="Screen Shot 2023-04-24 at 6.15.32 PM.png"  width="1000" height="179">
+
+**Original Code**
 ```
 // Returns a *new* array with all the elements of the input array in reversed
   // order
@@ -33,28 +59,7 @@ Original Code
   }
 ```
 
-Failure-inducing input 
-```
-@Test
-  public void testRMultipleInputs() {
-    int[] input1 = {3, 4};
-    assertArrayEquals(new int[]{4, 3}, ArrayExamples.reversed(input1));
-  }
-```
-
-This test reverses the order of an array by creating a new array with the reverse order. The failure inducing input had two elements to flip, 4 being the expected first input, but instead the code returned 0. 
-
-Input that doesn't fail
-```
-@Test
-  public void testReversed1() {
-    int[] input1 = {0};
-    assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
-  }
-```
-This test does not fail because there is only one number 0.
-
-Fixed Code
+**Fixed Code**
 ```
 // Returns a *new* array with all the elements of the input array in reversed
   // order
@@ -66,6 +71,7 @@ Fixed Code
     return newArray;
   }
 ```
+
 
 
 
