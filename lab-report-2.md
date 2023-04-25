@@ -72,11 +72,11 @@ This test does not fail because there is only one number 0.
   }
 ```
 
-The fix was returning newArray instead of arr. arr is the original array that held the elements, while newArray is the array that has the elements being placed backwards. 
+The fix was returning newArray instead of arr. arr is the original array that held the elements, while newArray is the array that has the elements being placed in the new reversed order. 
 
 ## Part 3 - Reflection
 
-Something I learned in week 2 was how to run a web server. It was cool to see how we could code for different url inputs and have a memory of the past inputs. 
+Something I learned in week 2 was how to run a web server. It was cool to see how we could code for different url inputs and have how the server would have a memory of the past inputs. Trying out new Markdown formats was also cool, I learned how to resize an image within markdown itself because my screenshots were showing up really big at first. 
 
 
 
