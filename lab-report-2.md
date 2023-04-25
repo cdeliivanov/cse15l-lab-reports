@@ -31,6 +31,8 @@ The 'display' variable is changed everytime add-message is used. This variable i
 
 This test reverses the order of an array by creating a new array with the reverse order. The failure inducing input had two elements to flip, 4 being the expected first input, but instead the code returned 0. 
 
+<img src="Screen Shot 2023-04-24 at 6.15.01 PM.png"  width="1000" height="153">
+
 **Input that doesn't fail**
 ```
 @Test
@@ -41,8 +43,6 @@ This test reverses the order of an array by creating a new array with the revers
 ```
 
 This test does not fail because there is only one number 0.
-
-<img src="Screen Shot 2023-04-24 at 6.15.01 PM.png"  width="1000" height="153">
 
 <img src="Screen Shot 2023-04-24 at 6.15.32 PM.png"  width="1000" height="179">
 
@@ -72,9 +72,11 @@ This test does not fail because there is only one number 0.
   }
 ```
 
+The fix was returning newArray instead of arr. arr is the original array that held the elements, while newArray is the array that has the elements being placed backwards. 
 
+## Part 3 - Reflection
 
-
+Something I learned in week 2 was how to run a web server. It was cool to see how we could code for different url inputs and have a memory of the past inputs. 
 
 
 
