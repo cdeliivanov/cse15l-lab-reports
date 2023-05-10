@@ -8,7 +8,8 @@ When I asked ChatGBT `What are some grep command line options?` it returned
 ![Image](Screen Shot 2023-05-09 at 2.06.52 PM.png)
 
 ## -w Command
-The -w command makes it so that only whole words are matched. 
+The -w command makes it so that only whole words are matched. This is useful when we want to find a specific word and not any words that might contain that phrase.
+
 ```
 christydeliivanov@christys-air-2 911report % grep -w "we" preface.txt
 the United States. The nation was unprepared. How did this happen, and how can we
@@ -47,7 +48,7 @@ biomed/gb-2003-4-7-r46.txt:          U118 brain glioblastoma cell line were cult
 We specify that the grep command is of the -w type and specify that we are searching for the word "glioblastoma" in files any of the biomed. Here it returns the file and line the word is found in.  
 
 ## -n Command
-The -n command prints the line number of each line that contains the searched word.
+The -n command prints the line number of each line that contains the searched word. This is useful if we want to track down the specific location of the word we are searching and seeing how all the instances are distributed throughout the file. 
 
 ```
 christydeliivanov@christys-air-2 technical % grep -n "glioblastoma" biomed/*.txt
@@ -104,7 +105,7 @@ christydeliivanov@Christys-MacBook-Air-2 911report % grep -n "we" preface.txt
 Here we specify that the grep command is of type n and searching for the word 'we' in the preface.txt. It returns all the lines and line numbers that contain the word we within the preface.txt file. 
 
 ## -c Command
-The -c command prints the number of lines that contain the greped word. 
+The -c command prints the number of lines that contain the greped word. This is useful if we only want a total count, especially if there are many instances. 
 
 ```
 christydeliivanov@Christys-MacBook-Air-2 911report % grep -c "we" preface.txt
@@ -145,13 +146,20 @@ plos/journal.pbio.0020113.txt:1
 Here we used the -c command within the plos directory to see which files talk about cancer. Here we searched for the word cancer in all the txt files in plos and a count was returned for each file.
 
 ## --color Command
-I asked ChatGBT for even more interesting grep command line options and one of the suggested options was --color.
+I asked ChatGBT for even more interesting grep command line options and one of the suggested options was --color. This is useful if we want to easily pinpoint exact uses of different phrases and easily spot words where the phrase is inside the word.
+
 ```
 --color: This option highlights the matched text with color, making it easier to spot in the output.
 ```
-
 
 ```
 christydeliivanov@Christys-MacBook-Air-2 911report % grep --color "we" preface.txt
 ```    
 ![Image](Screen Shot 2023-05-10 at 12.20.29 PM.png)
+Here we used the --color command to highlight any instances of 'we' inside the preface.txt file. 
+
+```
+christydeliivanov@Christys-MacBook-Air-2 government % grep --color "Title IV" */*.txt
+```
+![Image](Screen Shot 2023-05-10 at 1.11.05 PM.png)
+Here we used the --color command to highlight any instances of "Title IV" in the government directory.
