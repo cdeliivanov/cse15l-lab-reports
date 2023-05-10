@@ -1,6 +1,6 @@
 # Lab Report 3: Researching Commands
 
-In this report, we will research the grep command further
+In this report, we will research the grep command further. 
 
 ## Grep Command
 When I asked ChatGBT `What are some grep command line options?` it returned
@@ -103,4 +103,44 @@ christydeliivanov@Christys-MacBook-Air-2 911report % grep -n "we" preface.txt
 ```
 Here we specify that the grep command is of type n and searching for the word 'we' in the preface.txt. It returns all the lines that contain the word we within the preface.txt file. 
 
+## -c Command
+The -c command prints the number of lines that contain the greped word. 
+
+```
+christydeliivanov@Christys-MacBook-Air-2 911report % grep -c "we" preface.txt
+29
+```
+Here the grep command is searching for the word 'we' in the preface.txt file as we did before. However, this time the count of lines that contain 'we' is printed. 
+
+```
+christydeliivanov@Christys-MacBook-Air-2 technical % grep -c "cancer" plos/*.txt
+plos/journal.pbio.0020001.txt:0
+plos/journal.pbio.0020010.txt:0
+plos/journal.pbio.0020012.txt:0
+plos/journal.pbio.0020013.txt:1
+plos/journal.pbio.0020019.txt:0
+plos/journal.pbio.0020028.txt:5
+plos/journal.pbio.0020035.txt:2
+plos/journal.pbio.0020040.txt:9
+plos/journal.pbio.0020042.txt:0
+plos/journal.pbio.0020043.txt:0
+plos/journal.pbio.0020046.txt:0
+plos/journal.pbio.0020047.txt:0
+plos/journal.pbio.0020052.txt:1
+plos/journal.pbio.0020053.txt:2
+plos/journal.pbio.0020054.txt:0
+plos/journal.pbio.0020063.txt:1
+plos/journal.pbio.0020064.txt:0
+plos/journal.pbio.0020067.txt:0
+plos/journal.pbio.0020068.txt:0
+plos/journal.pbio.0020071.txt:1
+plos/journal.pbio.0020073.txt:0
+plos/journal.pbio.0020100.txt:0
+plos/journal.pbio.0020101.txt:0
+plos/journal.pbio.0020105.txt:0
+plos/journal.pbio.0020112.txt:1
+plos/journal.pbio.0020113.txt:1
+...
+```
+Here we used the -c command within the plos directory to see which files talk about cancer. Here we searched for the word cancer in all the txt files in plos and a count was returned for each file.
 
