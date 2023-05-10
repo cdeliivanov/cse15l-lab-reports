@@ -101,7 +101,7 @@ christydeliivanov@Christys-MacBook-Air-2 911report % grep -n "we" preface.txt
 99:                number of them. We decided consciously to focus on recommendations we believe to be
 102:                pause, reflect, and sometimes change our minds as we studied these problems and
 ```
-Here we specify that the grep command is of type n and searching for the word 'we' in the preface.txt. It returns all the lines that contain the word we within the preface.txt file. 
+Here we specify that the grep command is of type n and searching for the word 'we' in the preface.txt. It returns all the lines and line numbers that contain the word we within the preface.txt file. 
 
 ## -c Command
 The -c command prints the number of lines that contain the greped word. 
@@ -144,3 +144,14 @@ plos/journal.pbio.0020113.txt:1
 ```
 Here we used the -c command within the plos directory to see which files talk about cancer. Here we searched for the word cancer in all the txt files in plos and a count was returned for each file.
 
+## --color Command
+I asked ChatGBT for even more interesting grep command line options and one of the suggested options was --color.
+```
+--color: This option highlights the matched text with color, making it easier to spot in the output.
+```
+
+
+```
+christydeliivanov@Christys-MacBook-Air-2 911report % grep --color "we" preface.txt
+```    
+![Image](Screen Shot 2023-05-10 at 12.20.29 PM.png)
