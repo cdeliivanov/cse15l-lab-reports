@@ -1,6 +1,6 @@
 # Lab Report 3: Researching Commands
 
-In this report, we will research the grep command further. 
+In this report, we will research the grep command further. We will look at the -w, -n, -c, and --color command line arguments.
 
 ## Grep Command
 When I asked ChatGBT `What are some grep command line options?` it returned
@@ -45,10 +45,10 @@ biomed/gb-2002-3-9-research0051.txt:          cell cultures [ 32]. In glioblasto
 biomed/gb-2003-4-7-r46.txt:        from human brain glioblastoma. Our study examined the
 biomed/gb-2003-4-7-r46.txt:          U118 brain glioblastoma cell line were cultured at 37°C
 ```
-We specify that the grep command is of the -w type and specify that we are searching for the word "glioblastoma" in files any of the biomed. Here it returns the file and line the word is found in.  
+We specify that the grep command is of the -w type and specify that we are searching for the word "glioblastoma" within biomed. Here it returns the file and line the word is found in.  
 
 ## -n Command
-The -n command prints the line number of each line that contains the searched word. This is useful if we want to track down the specific location of the word we are searching and seeing how all the instances are distributed throughout the file. 
+The -n command prints the line number of each line that contains the searched word. This is useful if we want to track down the specific location of the word we are searching and seeing how all the instances are distributed throughout the files. 
 
 ```
 christydeliivanov@christys-air-2 technical % grep -n "glioblastoma" biomed/*.txt
@@ -68,7 +68,7 @@ biomed/gb-2003-4-7-r46.txt:148:          glioblastomas and astrocytomas, generat
 biomed/gb-2003-4-7-r46.txt:166:          were also higher in high-grade glioblastomas over U118
 biomed/gb-2003-4-7-r46.txt:439:          U118 brain glioblastoma cell line were cultured at 37°C
 ```
-We specify that the grep command is of the -n type and specify that we are searching for the word "glioblastoma" in any of the biomed files. Here it returns the file, line number, and the line that contains it. Compared to the -w search we actually see more lines becuase now -w is also returning lines that have words that contain 'glioblastoma' (ex. glioblastomas). 
+We specify that the grep command is of the -n type and specify that we are searching for the word "glioblastoma" in any of the biomed files. Here it returns the file, line number, and the line that contains it. Compared to the -w search we actually see more lines becuase now -n is also returning lines that have words that contain 'glioblastoma' (ex. glioblastomas). 
 
 ```
 christydeliivanov@Christys-MacBook-Air-2 911report % grep -n "we" preface.txt
@@ -102,7 +102,7 @@ christydeliivanov@Christys-MacBook-Air-2 911report % grep -n "we" preface.txt
 99:                number of them. We decided consciously to focus on recommendations we believe to be
 102:                pause, reflect, and sometimes change our minds as we studied these problems and
 ```
-Here we specify that the grep command is of type n and searching for the word 'we' in the preface.txt. It returns all the lines and line numbers that contain the word we within the preface.txt file. 
+Here we specify that the grep command is of type n and searching for the word 'we' in the preface.txt. It returns all the lines and line numbers that contain 'we' within the preface.txt file. 
 
 ## -c Command
 The -c command prints the number of lines that contain the greped word. This is useful if we only want a total count, especially if there are many instances. 
@@ -111,7 +111,7 @@ The -c command prints the number of lines that contain the greped word. This is 
 christydeliivanov@Christys-MacBook-Air-2 911report % grep -c "we" preface.txt
 29
 ```
-Here the grep command is searching for the word 'we' in the preface.txt file as we did before. However, this time the count of lines that contain 'we' is printed. 
+Here the grep command is searching for the word 'we' in the preface.txt file as we did before. However, this time the count of lines is printed. 
 
 ```
 christydeliivanov@Christys-MacBook-Air-2 technical % grep -c "cancer" plos/*.txt
@@ -143,14 +143,14 @@ plos/journal.pbio.0020112.txt:1
 plos/journal.pbio.0020113.txt:1
 ...
 ```
-Here we used the -c command within the plos directory to see which files talk about cancer. Here we searched for the word cancer in all the txt files in plos and a count was returned for each file.
+Here we used the -c command within the plos directory and searched for the word cancer and a count was returned for each file. This can let us know which articles talk about cancer. 
 
 ## --color Command
-I asked ChatGBT for even more interesting grep command line options and one of the suggested options was --color. This is useful if we want to easily pinpoint exact uses of different phrases and easily spot words where the phrase is inside the word.
-
+I asked ChatGBT for even more interesting grep command line options and one of the suggested options was --color.
 ```
 --color: This option highlights the matched text with color, making it easier to spot in the output.
 ```
+This is useful if we want to easily pinpoint exact uses of different phrases and easily spot words where the phrase is inside the word.
 
 ```
 christydeliivanov@Christys-MacBook-Air-2 911report % grep --color "we" preface.txt
