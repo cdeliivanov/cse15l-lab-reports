@@ -5,16 +5,21 @@ In this report we will be going through command line tasks.
 ssh cs15lsp23ag@ieng6.ucsd.edu <Enter>
   
 ![Image](step-1.png)
-  
+First I used ssh to log into my ieng6 account.  
+
 ## Step 5
 git clone https://github.com/ucsd-cse15l-s23/lab7 <Enter>
 ls <Enter>
   
 ![Image](step-2.png)  
+Then I cloned the lab7 repository. I used ls to double check that it was there.  
   
 ## Step 6
 cd lab7 <Enter>
 sh ./test.sh <Enter>
+  
+![Image](step-3.png)
+Here I cd to access the files inside lab7. Then I run the tests to see that they fail.
   
 ## Step 7
 vim ListExamples.java <Enter>
@@ -23,8 +28,14 @@ x i 2
 ctrl + c
 :wq <enter>
   
+![Image](step-4.png)
+Here I used the vim command to go into the ListExamples.java file. Then I used ?change to search for 'change' as a keyword and used j l l as my arrow keys to move over to the 1 in 'index1'. Then I used x to delete the 1 and 'i' to go into insert mode and typed '2' to make it index2. Then I did ctrl+c to exit insert mode and ':wq' to exit vim and save my changes. 
+  
 ## Step 8
 <up>, <up>, <enter>
+  
+![Image](step-5.png)
+I used my up buttons to pull down the sh ./test.sh command from earlier.
   
 ## Step 9
 
