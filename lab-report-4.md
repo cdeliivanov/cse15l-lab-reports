@@ -9,12 +9,12 @@ First I used ssh to log into my ieng6 account.
 
 ## Step 5
 ```
-git clone https://github.com/ucsd-cse15l-s23/lab7 <Enter>
+git clone git@github.com:cdeliivanov/lab7.git <Enter>
 ls <Enter>
 ```
   
-![Image](step-2.png)  
-Then I cloned the lab7 repository. I used ls to double check that it was there.  
+![Image](gitclone.png)  
+Then I cloned the lab7 repository. Make sure it is the SSH link to ensure you can push changes afterwards. I used ls to double check that it was there.  
   
 ## Step 6
 ```
@@ -44,4 +44,12 @@ Here I used the vim command to go into the ListExamples.java file. Then I used ?
 I used my up buttons to pull down the sh ./test.sh command from earlier.
   
 ## Step 9
+```
+git status
+git add ListExamples.java
+git commit -m "update ListExamples.java"
+git push origin main
+```
 
+![Image](laststep.png)
+Here I used git status to check what I was saving. Then I added ListExamples.java and used commit -m with a commit note to commit the changes. Then I did push origin main to push the changes. 
