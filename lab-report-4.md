@@ -38,7 +38,7 @@ ctrl + c
 Here I used the vim command to go into the ListExamples.java file. Then I used ?change to search for 'change' as a keyword and used j l l as my arrow keys to move over to the 1 in 'index1'. Then I used x to delete the 1 and 'i' to go into insert mode and typed '2' to make it index2. Then I did ctrl+c to exit insert mode and ':wq' to exit vim and save my changes. 
   
 ## Step 8
-```<up>, <up>, <enter>```
+```<up> <up> <enter>```
   
 ![Image](step-5.png)
 I used my up buttons to pull down the sh ./test.sh command from earlier.
