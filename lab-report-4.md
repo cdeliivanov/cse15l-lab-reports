@@ -41,6 +41,7 @@ Here I used the vim command to go into the ListExamples.java file. Then I used ?
 ```<up> <up> <enter>```
   
 ![Image](step-5.png)
+
 I used my up buttons to pull down the sh ./test.sh command from earlier.
   
 ## Step 9
