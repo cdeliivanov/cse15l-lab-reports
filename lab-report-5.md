@@ -3,15 +3,12 @@
 ## Part 1: Debugging Senario
 Edstem Post:
 ![Image](Screen Shot 2023-06-02 at 1.22.48 PM.png) 
-```
+
 I am on VSCode in the lab7 repository. The symptom is that when I run the file of tests ListExamplesTests.java I get these results. 
 There are lots of different errors cited so I am not sure what happened. The failed test takes a list of ["x", "y"] and ["a", "b"] to get ["a", "b", "x", "y"].
-```
 
 Ta Response:
-```
 When we look at the error message at the top of the code we see that something is off with the array lengths. The expected length is a lot shorter so you likely are adding too much length somewhere in your method.  
-```
 
 Fix: 
 ![Image](Screen Shot 2023-06-02 at 2.06.00 PM.png) 
