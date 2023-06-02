@@ -1,4 +1,5 @@
 # Lab Report 5
+In this report we will go through an example debugging senario. 
 
 ## Part 1: Debugging Senario
 Edstem Post:
