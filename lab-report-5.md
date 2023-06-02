@@ -2,9 +2,9 @@
 
 ## Part 1: Debugging Senario
 Edstem Post:
+![Image](Screen Shot 2023-06-02 at 1.22.48 PM.png) 
 ```
 I am on VSCode in the lab7 repository. The symptom is that when I run the file of tests ListExamplesTests.java I get these results. 
-![Image](Screen Shot 2023-06-02 at 1.22.48 PM.png) 
 There are lots of different errors cited so I am not sure what happened. The failed test takes a list of ["x", "y"] and ["a", "b"] to get ["a", "b", "x", "y"].
 ```
 
@@ -14,9 +14,10 @@ When we look at the error message at the top of the code we see that something i
 ```
 
 Fix: 
-The bug was found to be an extra addition to the index2 count.
 ![Image](Screen Shot 2023-06-02 at 2.06.00 PM.png) 
-By blocking off different lines adding to the index counts, we will find that blocking off this line results in both the tests passing. 
+
+The bug was found to be an extra addition to the index2 count. By blocking off different lines adding to the index counts, we will find that blocking off this line results in both the tests passing. 
+
 ![Image](Screen Shot 2023-06-02 at 2.07.05 PM.png)
 
 Overview:
